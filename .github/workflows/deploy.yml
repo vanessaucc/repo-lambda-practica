@@ -29,7 +29,4 @@ jobs: #la lista de tareas.
         run: zip -r function.zip index.js node_modules
 
       - name: Desplegar en Lambda
-        run: |
-          aws lambda update-function-code \ 
-            --function-name Lambda-RDS \
-            --zip-file fileb://function.zip
+        run: aws lambda update-function-code --function-name Lambda-RDS3 --zip-file fileb://function.zip
