@@ -10,10 +10,10 @@ jobs: #la lista de tareas.
     runs-on: ubuntu-latest #GitHub enciende una computadora virtual con Linux (Ubuntu) totalmente gratis por unos segundos para procesar tu código.
     steps:
       - name: Checkout del código 
-        uses: actions/checkout@v3 #Como la computadora de GitHub está vacía, este comando le dice: "Descarga una copia de mi código de este repositorio en tu disco duro".
+        uses: actions/checkout@v5 #Como la computadora de GitHub está vacía, este comando le dice: "Descarga una copia de mi código de este repositorio en tu disco duro".
 
       - name: Configurar credenciales de AWS
-        uses: aws-actions/configure-aws-credentials@v4 #Prepara la conexión con Amazon.
+        uses: aws-actions/configure-aws-credentials@v6 #Prepara la conexión con Amazon.
         with: #GitHub toma las llaves secretas que guardaste en los ajustes y las usa para loguearse en tu cuenta de AWS
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
