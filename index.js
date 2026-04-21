@@ -3,7 +3,7 @@ const mysql = require('mysql2/promise');
 // Configuración de la base de datos (se recomienda usar Variables de Entorno)
 const dbConfig = {
     // cambiar el host
-    host: process.env.DB_HOST || 'database.cwjq08eoks4x.us-east-1.rds.amazonaws.com',
+    host: process.env.DB_HOST || 'database-3.civekaicinjj.us-east-1.rds.amazonaws.com',
     user: process.env.DB_USER || 'admin',
     password: process.env.DB_PASSWORD || '12345678',
     database: process.env.DB_NAME || 'databaseLambda',
